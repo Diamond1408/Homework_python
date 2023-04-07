@@ -3,31 +3,39 @@
 
 
  
-import random
-arr = []
-for i in range(20):
-	x = int(random.random()*10)  
-	arr.append(x)
-	print("%3d" % x, end='')
-	if (i+1) % 10 == 0:	
-            print()
+# import random
+# arr = []
+# for i in range(20):
+# 	x = int(random.random()*10)  
+# 	arr.append(x)
+# 	print("%3d" % x, end='')
+# 	if (i+1) % 10 == 0:	
+#             print()
  
-minimum = int(input('min: '))
-maximum = int(input('max: '))
+# minimum = int(input('min: '))
+# maximum = int(input('max: '))
  
-index = []
-i = 0
-for i in arr:
-	if minimum <= i <= maximum:
-		index.append(arr.index(i))
-print("Количество: ", len(index))
-print("Индексы: ", index)
-b=[]
-while i < len(arr):
-    if 0 <= i <= 3:
-        b.append(arr[i])
-        del arr[i]
-    else:    
-        i += 1
-print(b)
-print("Обновлённый список", arr)
+# index = []
+# i = 0
+# for i in arr:
+# 	if minimum <= i <= maximum:
+# 		index.append(arr.index(i))
+# print("Количество: ", len(index))
+# print("Индексы: ", index)
+# b=[]
+# while i < len(arr):
+#     if 0 <= i <= 3:
+#         b.append(arr[i])
+#         del arr[i]
+#     else:    
+#         i += 1
+# print(b)
+# print("Обновлённый список", arr)
+
+
+list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+min_number = int(input())
+max_number = int(input())
+for i in range(len(list_1)):
+    if min_number <= list_1[i] <= max_number:
+        print(i)

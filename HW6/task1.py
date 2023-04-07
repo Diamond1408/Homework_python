@@ -5,11 +5,19 @@
 # Каждое число вводится с новой строки.
 
 
-n = int(input('Введите число n: '))
-a = [0]*n
-a[0] = int(input('Введите число a[0]: '))
-d = int(input('Введите число d: ')) 
-print(a[0],end=' ') 
-for i in range(1,n):
-    a[i]= a[i-1]+d 
-print(a[i],end=' ')
+# n = int(input('Введите число n: '))
+# a = [0]*n
+# a[0] = int(input('Введите число a[0]: '))
+# d = int(input('Введите число d: ')) 
+# print(a[0],end=' ') 
+# for i in range(1,n):
+#     a[i]= a[i-1]+d 
+# print(a[i],end=' ')
+
+
+
+a1 = int(input())
+d = int(input())
+n = int(input())
+for i in range(n):
+    print(a1 + i * d)
